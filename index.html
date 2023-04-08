@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<style>
+body{
+  background-image: url('forest.jpg');
+}
+</style>
+
+<body onload="loadBigFoot()">
+  <script>    
+    function moveBigFoot()
+    {
+      alert('Woohoo, you win! You found Bigfoot!')
+      var picture = document.getElementById('bigFoot')
+    
+      var x = Math.random() * 300
+      var y = Math.random() * 300
+    
+      picture.style.top = x + 'px'
+      picture.style.left = y + 'px'
+      
+    }
+
+    function loadBigFoot()
+    {
+      document.getElementById('bigFoot').src='bigfoot.png';
+    }
+
+  </script>
+
+  <img id="bigFoot" onclick="moveBigFoot()" ; />
+    
+   
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
